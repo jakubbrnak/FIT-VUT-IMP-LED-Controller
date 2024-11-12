@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ESP32 LED Control</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h2>ESP32 LED Control Interface</h2>
+    <button id="connect">Connect to Bluetooth Device</button>
+
+    <div id="rgb-controls" style="display: none;">
+        <h3>RGB Led Control</h3>
+        <button onclick="sendValue(1)">Animation 1</button>
+        <button onclick="sendValue(2)">Animation 2</button>
+        <button onclick="sendValue(3)">Animation 3</button>
+        <button onclick="sendValue(4)">Animation 4</button>
+    </div>
+
+    <div id="rgb-speed" style="display: none;">
+        <button onclick="sendValue(5)">Low Speed</button>
+        <button onclick="sendValue(6)">Medium Speed</button>
+        <button onclick="sendValue(7)">High Speed</button>
+        <button onclick="sendValue(8)">OFF</button>
+    </div>
+
+
+
+    <div id="simple-controls" style="display: none;">
+        <h3>Simple Led Control</h3>
+        <button onclick="sendValue(9)">Animation 1</button>
+        <button onclick="sendValue(10)">Animation 2</button>
+        <button onclick="sendValue(11)">Animation 3</button>
+        <button onclick="sendValue(12)">Animation 4</button>
+    </div>
+
+    <div id="simple-speed" style="display: none;">
+        <button onclick="sendValue(13)">Low Speed</button>
+        <button onclick="sendValue(14)">Medium Speed</button>
+        <button onclick="sendValue(15)">High Speed</button>
+        <button onclick="sendValue(16)">OFF</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
